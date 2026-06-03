@@ -206,6 +206,13 @@ Xcode で開き、`ProductionKitDemoIOS` scheme を iPhone Simulator で実行�
 - 収益情報
 - 審査対応メモ
 
+## 関連リポジトリ
+
+- [mobile-app-portfolio](https://github.com/nomazzo/mobile-app-portfolio): 全体のアプリポートフォリオ説明
+- [ios-photo-editor-sample](https://github.com/nomazzo/ios-photo-editor-sample): ペインティング風カメラアプリの公開用サンプル
+- [ios-utility-app-sample](https://github.com/nomazzo/ios-utility-app-sample): ホームタスク管理アプリの公開用サンプル
+- [android-photo-editor-sample](https://github.com/nomazzo/android-photo-editor-sample): Androidフォトエディターの公開用サンプル
+
 ## Public Demo Notes
 
 このプロジェクトは公開用ポートフォリオです。本番の App Store 商品、AdMob アカウント、バックエンド、分析基盤、商用URLには接続していません。
