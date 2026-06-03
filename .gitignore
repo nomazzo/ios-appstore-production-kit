@@ -1,0 +1,11 @@
+.DS_Store
+.build/
+DerivedData/
+*.xcuserstate
+*.xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# Keep real app configuration out of the public portfolio repository.
+Config/ProductionKit.plist
+Config/*.private.plist

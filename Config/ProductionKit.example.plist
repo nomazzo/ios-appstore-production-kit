@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>useTestAds</key>
+	<true/>
+	<key>forceHideAdsForScreenshots</key>
+	<false/>
+	<key>appOpenAdBackgroundReturnShowRate</key>
+	<real>0.3</real>
+	<key>appOpenAdUnitID</key>
+	<string>ca-app-pub-3940256099942544/5575463023</string>
+	<key>adaptiveBannerAdUnitID</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>collapsibleBannerAdUnitID</key>
+	<string>ca-app-pub-3940256099942544/2435281174</string>
+	<key>interstitialAdUnitID</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>rewardedAdUnitID</key>
+	<string>ca-app-pub-3940256099942544/1712485313</string>
+	<key>premiumProductID</key>
+	<string>com.example.productionkit.pro</string>
+</dict>
+</plist>
