@@ -1,6 +1,6 @@
-# StoreKit 2 Purchase Flow
+# StoreKit 2 購入フロー
 
-The StoreKit layer is built around a small protocol:
+StoreKit layerは、小さなprotocolを中心に構成している。
 
 ```swift
 public protocol PurchaseClient {
@@ -11,20 +11,19 @@ public protocol PurchaseClient {
 }
 ```
 
-This keeps the app-facing purchase manager testable. Production builds use
-`StoreKitPurchaseClient`; tests and demos can inject a mock client.
+この形にすることで、アプリ側のpurchase managerをtestしやすくしている。
+本番buildでは `StoreKitPurchaseClient` を使い、testやdemoではmock clientを差し替えられるようにしている。
 
-## Production Behaviors Shown
+## 公開サンプルで示している挙動
 
-- Product loading from StoreKit 2
-- Verified transaction handling
-- Transaction finishing
-- Current entitlement refresh
-- Restore via `AppStore.sync()`
-- Separate outcomes for purchased, cancelled, and pending states
-- Entitlement persistence in `UserDefaults`
+- StoreKit 2からの商品読み込み
+- verified transaction の処理
+- transaction finishing
+- current entitlement の更新
+- `AppStore.sync()` によるrestore
+- purchased / cancelled / pending の結果分岐
+- `UserDefaults` へのentitlement保存
 
-## Public Repo Notes
+## 公開リポジトリでの注意点
 
-Use sample product IDs such as `com.example.demo.pro`. Do not commit real App Store
-Connect product IDs.
+`com.example.demo.pro` のようなsample product IDを使用し、実際の App Store Connect product ID はcommitしない。

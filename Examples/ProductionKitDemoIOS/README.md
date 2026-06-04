@@ -4,7 +4,7 @@ iPhone Simulator でスクリーンショットを撮影するための Xcode �
 
 `Examples/ProductionKitDemo/` の SwiftUI 画面を使い、`AppStoreProductionKit` はローカル Swift Package として参照します。
 
-## Run
+## 実行方法
 
 Xcode で以下を開いてください。
 
@@ -14,7 +14,7 @@ Examples/ProductionKitDemoIOS/ProductionKitDemoIOS.xcodeproj
 
 scheme は `ProductionKitDemoIOS` を選択し、iPhone Simulator で実行します。
 
-## Notes
+## 注意点
 
 - Bundle ID は `com.example.productionkit.demo` です。
 - 本番の App ID、IAP ID、AdMob ID は含めていません。

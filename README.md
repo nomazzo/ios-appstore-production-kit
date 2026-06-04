@@ -108,7 +108,6 @@ ios-appstore-production-kit/
 │   ├── AdMob.md
 │   ├── Consent.md
 │   ├── StoreKit2.md
-│   ├── ReleaseChecklist.md
 │   └── screenshots/
 └── Examples/
     ├── ProductionKitDemo/

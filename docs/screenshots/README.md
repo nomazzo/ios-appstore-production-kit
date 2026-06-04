@@ -1,4 +1,4 @@
-# screenshots
+# スクリーンショット
 
 SwiftUI demo app のスクリーンショットを配置するフォルダです。
 

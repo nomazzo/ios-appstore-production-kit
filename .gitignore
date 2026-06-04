@@ -9,3 +9,6 @@ DerivedData/
 # Keep real app configuration out of the public portfolio repository.
 Config/ProductionKit.plist
 Config/*.private.plist
+
+# Local release preparation notes
+docs/ReleaseChecklist.md

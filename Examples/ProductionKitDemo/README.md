@@ -13,13 +13,13 @@ README 掲載用の撮影を前提に、縦長の iPhone 風サイズで固定�
 - Ads: Google公式テスト広告ID、非パーソナライズ広告 request extras
 - Lifecycle: App Open Ad 判定、レビュー依頼の launch count / cooldown
 
-## Run
+## 実行方法
 
 ```bash
 swift run ProductionKitDemo
 ```
 
-## Screenshot
+## スクリーンショット
 
 README へ掲載する場合は、以下の名前で `docs/screenshots/` に配置する想定です。
 

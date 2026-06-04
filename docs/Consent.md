@@ -1,7 +1,6 @@
-# Consent Handling
+# 同意管理
 
-Consent flows vary by SDK and target region, so the package exposes a small abstraction
-instead of committing a vendor SDK directly:
+同意取得のflowはSDKや対象地域によって変わるため、このpackageではvendor SDKへ直接依存せず、小さな抽象化だけを公開している。
 
 ```swift
 public protocol ConsentClient {
@@ -11,17 +10,16 @@ public protocol ConsentClient {
 }
 ```
 
-In a production app, a `ConsentClient` adapter can wrap Google UMP or another consent
-provider. The package-level `ConsentCoordinator` keeps state and sequences the calls.
+実アプリでは、`ConsentClient` adapterが Google UMP などのconsent providerを包む。
+package側の `ConsentCoordinator` は状態管理と呼び出し順序の制御を担当する。
 
-## Production Behaviors Shown
+## 公開サンプルで示している挙動
 
-- Unknown, required, obtained, and not-required states
-- Privacy options availability
-- Personalized ad eligibility
-- Async flow coordination
+- unknown / required / obtained / not-required の状態管理
+- privacy options の表示可否
+- personalized ad の利用可否
+- async flow の順序制御
 
-## Public Repo Notes
+## 公開リポジトリでの注意点
 
-Do not commit test device identifiers, private debug configuration, or app-specific consent
-screenshots.
+test device identifier、privateなdebug設定、アプリ固有の同意画面スクリーンショットはcommitしない。

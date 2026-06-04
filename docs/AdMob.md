@@ -1,18 +1,16 @@
-# AdMob Configuration Pattern
+# AdMob設定パターン
 
-The public package does not depend directly on Google Mobile Ads. Instead, it includes
-the configuration and policy pieces that are safe to publish:
+公開用packageでは、Google Mobile Ads SDKへ直接依存しない構成にしている。代わりに、公開しても問題ない設定値とpolicy部分だけを含めている。
 
-- Ad unit type mapping
-- Google test ad IDs
-- Production placeholder fallback
-- Non-personalized ad request extras
-- Fullscreen ad cooldown logic
+- 広告ユニット種別のmapping
+- Google公式のtest ad ID
+- 本番IDがない場合のplaceholder fallback
+- 非パーソナライズ広告向けのrequest extras
+- fullscreen広告のcooldown logic
 
-Real apps can add a thin adapter that converts these values into `GoogleMobileAds`
-requests and banner/fullscreen ad objects.
+実アプリでは、これらの値を `GoogleMobileAds` のrequestやbanner / fullscreen広告objectへ変換する薄いadapterを追加する想定。
 
-## Example
+## 使用例
 
 ```swift
 let config = AdConfiguration(usesTestAds: true)
@@ -22,7 +20,6 @@ let policy = AdRequestPolicy(hasPersonalizedAdsConsent: false)
 let extras = policy.extras // ["npa": "1"]
 ```
 
-## Public Repo Notes
+## GitHub公開リポジトリでの注意点
 
-Do not publish real AdMob IDs. This repository uses official Google test IDs when
-`usesTestAds` is true, and placeholder strings when production values are missing.
+`usesTestAds` が true の場合はGoogle公式のtest IDを使い、本番値がない場合はplaceholder文字列を返す仕様になっている。
